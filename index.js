@@ -115,7 +115,15 @@ function getPasswordOptions() {
     const isUppercaseIncluded = confirm('Should your password include uppercase characters?');
     const isNumericIncluded = confirm('Should your password include numeric characters?');
     const isSpecialCharsIncluded = confirm('Should your password include special characters?');
+
+    if (isLowercaseIncluded || isUppercaseIncluded || isNumericIncluded || isSpecialCharsIncluded) {
+    } else {
+      alert('Please choose at least 1 character type please.');
+    } 
+  } else {
+    alert('Password length invalid, password should have between 8 and 1128 charaters!')
   }
+}
 
   // Object to store user input information
   let userPasswordOptions = {
@@ -132,25 +140,25 @@ function getPasswordOptions() {
 function generatePassword() {
   let passwordOptions = getPasswordOptions();
   let userPasswordConfirms = [];
-  let generatedPassword = "";
+  let password = "";
 
   if (passwordOptions.passwordLower) {
     userPasswordConfirms = userPasswordConfirms.concat(lowerCasedCharacters);
   }
 
   if (passwordOptions.passwordUpper) {
-    userPasswordConfirms = userPasswordConfirms.concat(lowerCasedCharacters);
+    userPasswordConfirms = userPasswordConfirms.concat(upperCasedCharacters);
   }
 
   if (passwordOptions.passwordNumeric) {
-    userPasswordConfirms = userPasswordConfirms.concat(lowerCasedCharacters);
+    userPasswordConfirms = userPasswordConfirms.concat(numericCharacters);
   }
 
   if (passwordOptions.passwordSpecial) {
-    userPasswordConfirms = userPasswordConfirms.concat(lowerCasedCharacters);
+    userPasswordConfirms = userPasswordConfirms.concat(specialCharacters);
   }
 
-  
+
 }
 
 
