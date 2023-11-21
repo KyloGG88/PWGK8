@@ -88,9 +88,30 @@ var upperCasedCharacters = [
   'Z'
 ];
 
+// Function to get password length
+function isPasswordLengthInputValid(passwordInputLength) { 
+  if (passwordInputLength < 8) {
+    return false;
+  }
+  if (passwordInputLength > 128) {
+    return false;
+  }
+  if (passwordInputLength >= 8 && passwordInputLength <= 128) { 
+    return true;
+  }
+  return false;
+}
+
 // Function to prompt user for password options
 function getPasswordOptions() {
+  console.log("Get Password Options");
 
+  const passwordLength = prompt('How long should your Password be? (password should be between 8 & 128 characters)');
+  const passwordLengthAsNumber = parseInt(passwordLength, 10);
+
+  if (isPasswordLengthInputValid(passwordLengthAsNumber)) {
+    // Questions to get true or false statements for arrays above, at least 1 must be true
+  }
 }
 
 // Function for getting a random element from an array
