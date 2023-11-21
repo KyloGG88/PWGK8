@@ -112,6 +112,48 @@ function generatePassword() {
     return;
   }
 
+  // checking that user has selected atleast one of the variables as true
+  if (!shouldUseLower && !shouldUseUpper && !shouldUseNumber && !shouldUseSpecial) {
+    alert("At least one of the password variables should be selected.");
+  } else {
+    //function to create an array of characters selected by user. Randomises the characters first then adds them to an array depending on how long the user wants the array to be. 
+    while (passwordCharacters.length < lengthOfPassword) {
+      if (shouldUseLower && passwordCharacters.length < lengthOfPassword) {
+        let indexOfLower = Math.floor(Math.random() * lowerCasedCharacters.length);
+        passwordCharacters.push(
+          lowerCasedCharacters[indexOfLower]
+        );
+      }
+      if (shouldUseUpper && passwordCharacters.length < lengthOfPassword) {
+        let indexOfUpper = Math.floor(Math.random() * upperCasedCharacters.length);
+        passwordCharacters.push(
+          upperCasedCharacters[indexOfUpper]
+        );
+      }
+      if (shouldUseNumber && passwordCharacters.length < lengthOfPassword) {
+        let indexOfNumber = Math.floor(Math.random() * numericCharacters.length);
+        passwordCharacters.push(
+          numericCharacters[indexOfNumber]
+        );
+      }
+      if (shouldUseSpecial && passwordCharacters.length < lengthOfPassword) {
+        let indexOfSpecial = Math.floor(Math.random() * specialCharacters.length);
+        passwordCharacters.push(
+          specialCharacters[indexOfSpecial]
+        );
+      }
+    }
+  }
+
+  // shuffle characters within the password characters array using the Fisher-Yates shuffle algorithm to create a new character order
+  for (let i = passwordCharacters.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [passwordCharacters[i], passwordCharacters[j]] = [passwordCharacters[j], passwordCharacters[i]];
+  }
+
+  // convert the password characters array into a single string
+  let passwordCharactersString = passwordCharacters.join('');
+  return passwordCharactersString;
 }
 
 // // // Get references to the #generate element
