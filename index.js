@@ -111,6 +111,10 @@ function getPasswordOptions() {
 
   if (isPasswordLengthInputValid(passwordLengthAsNumber)) {
     // Questions to get true or false statements for arrays above, at least 1 must be true
+    const isLowercaseIncluded = confirm('Should your password include lowercase characters?');
+    const isUppercaseIncluded = confirm('Should your password include uppercase characters?');
+    const isNumericIncluded = confirm('Should your password include numeric characters?');
+    const isSpecialCharsIncluded = confirm('Should your password include special characters?');
   }
 }
 
