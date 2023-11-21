@@ -116,6 +116,16 @@ function getPasswordOptions() {
     const isNumericIncluded = confirm('Should your password include numeric characters?');
     const isSpecialCharsIncluded = confirm('Should your password include special characters?');
   }
+
+  // Object to store user input information
+  let userPasswordOptions = {
+    passwordLength: passwordLengthAsNumber,
+    passwordLower: isLowercaseIncluded,
+    passwordUpper: isUppercaseIncluded,
+    passwordNumeric: isNumericIncluded,
+    passwordSpecial: isSpecialCharsIncluded
+  };
+  return userPasswordOptions;
 }
 
 // Function for getting a random element from an array
