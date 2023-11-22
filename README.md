@@ -26,7 +26,23 @@ Here is a link to the GitPages for this challenge: [PWGK8](https://kylogg88.gith
 
 Here is a screenshot of my work:
 
-![](images/workc4cf.jpg)
+Start_window
+![](images/Start_window.jpg)
+
+Password_request                       Request_failed_invalid_number_of_characters
+![](images/Password_request.jpg)        ![](images/Request_failed_invalid_number_of_characters.jpg)
+
+Info_request_1                        Info_request_2
+![](images/Info_request_1.jpg)        ![](images/Info_request_2.jpg)
+
+Info_request_3                        Info_request_4
+![](images/Info_request_3.jpg)        ![](images/Info_request_4.jpg)
+
+Info_request_failed
+![](images/Info_request_failed.jpg)
+
+Successful_password_generated
+![](images/Successful_password_generated.jpg)
 
 # Resources
 
