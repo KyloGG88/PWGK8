@@ -24,7 +24,7 @@ The purpose of this application is to generate random passwords based on user in
 
 Here is a link to the GitPages for this challenge: [PWGK8](https://kylogg88.github.io/PWGK8/)
 
-Here is a screenshot of my work:
+Here are screenshots of my work:
 
 Start_window
 ![](images/Start_window.jpg)
