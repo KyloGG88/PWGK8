@@ -29,14 +29,23 @@ Here is a screenshot of my work:
 Start_window
 ![](images/Start_window.jpg)
 
-Password_request                       Request_failed_invalid_number_of_characters
-![](images/Password_request.jpg)        ![](images/Request_failed_invalid_number_of_characters.jpg)
+Password_request       
+![](images/Password_request.jpg)
 
-Info_request_1                        Info_request_2
-![](images/Info_request_1.jpg)        ![](images/Info_request_2.jpg)
+Request_failed_invalid_number_of_characters
+![](images/Request_failed_invalid_number_of_characters.jpg)
 
-Info_request_3                        Info_request_4
-![](images/Info_request_3.jpg)        ![](images/Info_request_4.jpg)
+Info_request_1
+![](images/Info_request_1.jpg)
+
+Info_request_2
+![](images/Info_request_2.jpg)
+
+Info_request_3
+![](images/Info_request_3.jpg)
+
+Info_request_4
+![](images/Info_request_4.jpg)
 
 Info_request_failed
 ![](images/Info_request_failed.jpg)
